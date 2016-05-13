@@ -1,5 +1,5 @@
 minetest.log('action', '[MOD] Frisk loading ...')
-local frisk_version = "0.0.1"
+local frisk_version = "0.0.2"
 
 local i18n --internationalization
 if minetest.get_modpath("intllib") then

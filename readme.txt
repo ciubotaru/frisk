@@ -1,4 +1,4 @@
-FRISK MOD V0.0.1
+FRISK MOD V0.0.2
 -------------
 
 This mod adds a screening device to view other players' inventory.
@@ -15,7 +15,11 @@ AUTHORS
 -------
 See file AUTHORS
 
+CHNAGES
+-------
+See file CHANGES
+
 LICENSE
 -------
 - code is GPLv3+
-- textures are CC-BY-SA 4.0
+- media files are CC-BY-SA 4.0+
