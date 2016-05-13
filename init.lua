@@ -23,7 +23,17 @@ local function frisk(stack, player, pointedThing)
 	if obj and pointedThing.type == "object" then
 		local pName = obj:get_player_name()
 		if pName ~= "" then
-			local detached_inv = minetest.create_detached_inventory(pName) --InvRef
+			local detached_inv = minetest.create_detached_inventory(pName, {
+				allow_move = function()
+					return 0
+				end,
+				allow_put = function()
+					return 0
+				end,
+				allow_take = function()
+					return 0
+				end,
+			}) --InvRef
 			local player_inv = minetest.get_inventory({type='player', name = pName}) --InvRef
 			detached_inv:set_list('main', player_inv:get_list('main'))
 			local formspec =
